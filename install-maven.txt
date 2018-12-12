@@ -1,0 +1,33 @@
+------------------------------------------------
+For Linux OS :
+------------------------------------------------
+cd /opt/
+
+sudo wget http://www-eu.apache.org/dist/maven/maven-3/3.3.9/binaries/apache-maven-3.3.9-bin.tar.gz
+
+sudo tar -xvzf apache-maven-3.3.9-bin.tar.gz
+
+rename directory by following command :
+
+sudo mv apache-maven-3.3.9 maven
+
+sudo nano /etc/profile.d/mavenenv.sh
+
+Add the following lines in above file :
+
+export M2_HOME=/opt/maven
+export PATH=${M2_HOME}/bin:${PATH}
+
+Give the permissions by following command :
+
+sudo chmod +x /etc/profile.d/mavenenv.sh
+sudo source /etc/profile.d/mavenenv.sh
+
+mvn --version maven verion is displayed
+------------------------------------------------
+For Ubuntu OS :
+------------------------------------------------
+sudo apt-get install maven
+
+mvn --version maven verion is displayed
+

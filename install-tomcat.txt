@@ -1,0 +1,44 @@
+
+------------------------------------------------
+For Linux OS :
+------------------------------------------------
+sudo groupadd tomcat
+
+sudo useradd -s /bin/false -g tomcat -d /opt/tomcat tomcat
+
+cd /tmp
+
+curl -O http://apache.mirrors.ionfish.org/tomcat/tomcat-8/v8.5.5/bin/apache-tomcat-8.5.5.tar.gz
+
+sudo mkdir /opt/tomcat if not already exists
+
+------------------------------------------------
+For Ubuntu OS :
+------------------------------------------------
+
+sudo yum install tomcat6 tomcat6-webapps
+
+sudo /sbin/iptables -t nat -I PREROUTING -p tcp --dport 80 -j REDIRECT --to-port 9090
+
+To start tomcat8 which is installed in /usr/share/tomcat8
+sudo service tomcat8 start
+
+to stop tomcat8 use command :
+
+sudo service tomcat8 stop
+
+to change port :
+
+go to cd /var/lib/tomcat8
+
+in there conf folder server.xml file found.
+
+to check where tomcat8 is installed
+
+whereis tomcat8
+
+to allow tomcat 9090 port :
+sudo ufw allow 8080
+
+check whether succssful set or not.
+sudo ufw status

@@ -1,0 +1,20 @@
+After install EC2 instance and connected by Putty.
+Commands need to execute :
+
+yum update -y
+
+yum install httpd -y
+
+service httpd start
+
+chkconfig httpd on
+
+service httpd status
+
+cd /var/www/html
+
+nano index.html
+
+save the conetents by ctrl+X and enter
+
+by copying ip address in browser, hello world program running.

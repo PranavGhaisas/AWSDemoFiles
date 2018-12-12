@@ -1,0 +1,21 @@
+---------------------------------------
+to install mysql on linux 
+---------------------------------------
+sudo yum install mysql-server
+
+To start MySQL:
+sudo service mysqld start
+
+To stop MySQL:
+sudo service mysqld stop
+
+---------------------------------------
+to install mysql on ubuntu 
+---------------------------------------
+sudo apt-get install mysql-server
+
+To start MySQL:
+sudo service mysqld start
+
+To stop MySQL:
+sudo service mysqld stop

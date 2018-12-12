@@ -1,0 +1,52 @@
+Java installation in ubuntu
+
+sudo add-apt-repository ppa:webupd8team/java
+
+sudo apt update; sudo apt install oracle-java8-installer
+
+javac -version
+
+sudo apt install oracle-java8-set-default
+
+to set path 
+
+to check where java is installed 
+
+sudo update-alternatives --config java
+
+edit the environment file with vim editor :
+
+vim /etc/environment
+
+Add JAVA_HOME environment by adding the configuration line below:
+
+JAVA_HOME="/usr/lib/jvm/java-8-oracle/jre"
+
+Save the file and exit the editor.
+
+Next, edit the .bashrc file and add lines to export the JAVA_HOME environment variables:
+
+vim ~/.bashrc
+
+At the end of the file, paste the configuration below:
+
+export JAVA_HOME=/usr/lib/jvm/java-8-oracle/jre
+export PATH=$JAVA_HOME/bin:$PATH
+
+
+Save and exit, then reload the .bashrc file.
+
+source ~/.bashrc
+
+Make sure there is no error, and check the JAVA_HOME environment:
+
+echo $JAVA_HOME
+#then java path is displayed
+/usr/lib/jvm/java-8-oracle/jre
+
+
+TO install JDK and JRE seprately use :
+
+sudo apt-get install openjdk-8-jdk
+
+sudo apt-get install openjdk-8-jre

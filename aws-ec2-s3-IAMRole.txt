@@ -1,0 +1,57 @@
+After creating IAM role for S3 on EC2 instance.
+
+following command gives error :
+
+aws s3 ls
+
+so remove information located in following folder in any OS :
+
+cd ~/.aws
+
+then command
+
+ls
+
+in that display credentials file
+
+remove that file by
+
+rm credentials
+
+also remove config file by :
+
+rm config
+
+cd /
+
+clear the screen
+
+directly put command :
+
+aws s3 ls
+
+it gives output :
+
+2018-11-22 04:46:33 pranavs3bucket1234
+
+to display contents in s3 bucket use :
+
+aws s3 ls s3://pranavs3bucket1234
+
+put the contents in hello.txt by
+
+echo "Hello World 2" > hello2.txt
+
+copy this file in S3 bucket
+
+aws s3 cp hello2.txt s3://pranavs3bucket1234
+
+again check the contents in s3 bucket by :
+
+aws s3 ls s3://pranavs3bucket1234
+
+2018-11-22 04:51:35         10 hello.txt
+2018-11-27 04:59:25         32 hello2.txt
+
+it display 2 files
+

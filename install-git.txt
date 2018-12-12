@@ -1,0 +1,9 @@
+to install git repository use :
+sudo apt-get install git
+
+git --version
+
+to get repository :
+
+git clone https://github.com/PranavGhaisas/SimpleMavenTutorial.git
+

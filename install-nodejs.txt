@@ -1,0 +1,4 @@
+sudo apt-get install nodejs npm
+
+to check which version is installed :
+node --version

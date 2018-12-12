@@ -1,0 +1,6 @@
+Jenkins local machine
+
+Username : pranav
+Password : pranav123
+Username : admin
+Password : 5e79f1bfecd8467886aca0556ee52794

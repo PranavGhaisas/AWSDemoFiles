@@ -1,0 +1,64 @@
+wget -q -O - https://pkg.jenkins.io/debian/jenkins-ci.org.key | sudo apt-key add -
+
+echo deb https://pkg.jenkins.io/debian-stable binary/ | sudo tee /etc/apt/sources.list.d/jenkins.list
+
+sudo apt-get update
+
+sudo apt-get install jenkins
+
+starting Jenkins following cmd :
+
+sudo systemctl start jenkins
+
+Above command not giving any output, then use below command :
+
+to check whether running or not jenkins following cmd :
+
+sudo systemctl status jenkins
+
+To update firewall :
+
+sudo ufw allow 8080
+
+sudo ufw status
+
+Status: inactive
+
+If status is inactive then use below commands :
+
+sudo ufw allow OpenSSH
+sudo ufw enable
+
+For 1st password view fire below command :
+
+sudo cat /var/lib/jenkins/secrets/initialAdminPassword
+
+Insert this in password and click on Install Suggested plugins button. Plugins are installed.
+
+
+Jenkins creating username and password :
+Username : admin
+Password : admin123
+
+Jenkins URL  : http://52.0.103.155:8080/
+
+
+Give path in Jenkins Maven path :
+
+/usr/share/maven
+
+maven version 3.5.2
+
+JDK 1.8
+
+/usr/lib/jvm/java-8-oracle/
+	
+TO find particular file in ubuntu OS
+
+find / -type f -name "SimpleMavenTutorial-0.0.1-SNAPSHOT.war"
+
+
+File is in following path :
+
+/var/lib/jenkins/jobs/MavenProject/modules/com.test$SimpleMavenTutorial/builds/2/archive/com.test/SimpleMavenTutorial/0.0.1-SNAPSHOT
+

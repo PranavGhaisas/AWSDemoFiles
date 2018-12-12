@@ -1,0 +1,44 @@
+------------------------------------------
+On ubuntu OS first install aws cli 
+------------------------------------------
+sudo apt-get install awscli
+
+aws configure
+
+AWS Access Key ID [None]: AKIAJRSC7OKQNKYV7XZA
+AWS Secret Access Key [None]: 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 -- this is displayed only once for 1 user
+Default region name [None]:
+Default output format [None]:
+
+aws s3 ls
+
+make s3 bucket use :
+
+aws s3 mb s3://pranavs3bucket1234
+
+aws s3 mb : make a s3 bucket followed by name of s3 bucket
+
+s3 bucket is created
+
+aws s3 ls
+
+gives following output :
+
+2018-11-22 04:46:33 pranavs3bucket1234
+
+echo "Hello All" > hello.txt
+
+aws s3 cp hello.txt s3://pranavs3bucket1234
+
+hello.txt is uploaded in s3 bucket
+
+check in S3 in AWS browser
+
+
+output : 
+upload: ./hello.txt to s3://pranavs3bucket1234/hello.txt
+
+You can also view in cmd :
+
+aws s3 ls s3://pranavs3bucket1234
+
