@@ -1,0 +1,22 @@
+Hit this command in EC2 instance :
+
+curl "https://beqkmiukaj.execute-api.us-east-1.amazonaws.com/prod/MyServerlessWebsite" > myname.txt
+
+Your name displayed in myname file.
+
+AWS Lambda Function in Java
+1. Create Lamda Project/function in eclipse.
+2. After creation of project, right click on project, click on Amazon Web services, Upload Function to AWS Lambda
+3. Select a region and give a name to that function, after that, create a new bucket S3 or existing a new bucket.
+4. Check in AWS Lambda console. Displaying our function which is created in eclipse.
+5. Click on that function, click on Actions dropdown > Test button.
+6. Create a new event, and add a json like below :
+{
+  "name": "Pranav Ghaisas"
+}
+7. After that, click on Test button, green tick mark is displaying which is saying that our function is work.
+8. Response Message like this :
+{
+  "responseMessage": "Hello Pranav Ghaisas Response Time : Wed Dec 12 06:17:00 UTC 2018",
+  "transactionID": "71d37b57-3b63-4c3e-951d-4c7a3e09cf0e"
+}

@@ -1,5 +1,0 @@
-Hit this command in EC2 instance :
-
-curl "https://beqkmiukaj.execute-api.us-east-1.amazonaws.com/prod/MyServerlessWebsite" > myname.txt
-
-Your name displayed in myname file.
