@@ -7,3 +7,16 @@ to get repository :
 
 git clone https://github.com/PranavGhaisas/SimpleMavenTutorial.git
 
+
+To Commit fist time in new repository use below commands :
+#git init
+
+#git add .
+
+#git commit -m "Initial Commit of all my AWS Demo files"
+
+#git remote add origin https://github.com/PranavGhaisas/AWSDemoFiles.git
+
+#git push -u origin master
+
+Thats it check in GitHub
