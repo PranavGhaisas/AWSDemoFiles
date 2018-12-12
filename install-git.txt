@@ -20,3 +20,11 @@ To Commit fist time in new repository use below commands :
 #git push -u origin master
 
 Thats it check in GitHub
+---------------------------------------------------------
+For next all commits use :
+
+#git add .
+
+#git commit -m "Changes in Git File"
+
+#git push -u origin master
